@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.con{
+    /* width: 966px; */
+    height: 110px;
+    margin: 0 auto;
+}
+.header{
+    background:rgb(235, 185, 202);
+    margin: 0 auto;
+}
+.logo{
+    width: 265px;
+    height: 110px;
+    background: url(img/01.png);
+    float: left;
+}
+.titlename{
+    float:right;
+}
+.titlename ul{
+    margin-top: 9px;
+    height: 44px;
+    line-height: 44px;
+}
+.titlename li{
+    float: left;
+}
+.titlename li a{
+    border-right: 1px solid black;
+    padding: 0px 13px;
+    font-size: 13px;
+    color: #ababab;
+}
+.titlename .last{
+        padding-right: 0;
+        border: 0;
+}
+.titlename .active{
+    color:#c21a60;
+}
+.search{
+    float:right;
+    width: 234px;
+    height: 28px;
+    border: none;
+}
+.search input {
+    border:0;
+    outline: none;
+}
+.search .left{
+    width: 196px;
+    height: 28px;
+    float: left;
+    padding-left:14px ;
+}
+.search .right{
+    width: 24px;
+    height: 28px;
+    float:right;
+    background: url(img/9.png) no-repeat left center;
+}
+
+
+.nav{
+    height: 53px;
+    line-height: 53px;
+    border-top:1px solid;
+    background: rgb(255, 240, 217);
+    color: pink;
+}
+.nav li{
+    float: left;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+
+
+
+
+
+.banner .box1{
+    height: 380px;
+    /* border:1px black solid; */
+    float: left;
+    margin:  0px 20px;
+
+}   
+.banner .box2{
+    height: 380px;
+    /* border:1px black solid; */
+}
+
+
+.banner{
+    background-color:rgb(235, 205, 210);
+}
+.banner img{
+    width: 600px;
+    height: 380px;
+    border:1px solid black;
+}
+
+
+
+.list{
+    height: 213px;
+    /* background: yellow; */
+    margin-top: 51px;
+    margin-bottom: 35px;
+}
+.item{
+    height: 211px;
+    width: 305px;
+    border: 1px #ababab;
+    float: left;
+    padding:0px  50px;
+}
+.item p{
+   height: 47px;
+   line-height: 47px;
+   padding-left: 28px;
+}
+.item img{
+    display: block;
+}
+
+
+.footer{
+    height: 206px;
+    border: 1px solid #cccccc;
+    background: url(img/20.png);
+}
+.footer ul{
+    height: 84px;
+    padding-top: 30px;
+   padding-bottom: 30px;
+   border-bottom: 1px solid #ecebeb;
+   line-height: 28px;
+}
+.footer ul li{
+    width: 210px;
+    padding-left: 50px;
+    font-size: 16px;
+    color:#336699;
+    float: left;
+
+}
+.footer p{
+    height: 61px;
+    line-height: 61px;
+    padding-left: 30px;
+    font-size: 16px;
+}
+.footer p span{
+    color:#0096da;
+}
