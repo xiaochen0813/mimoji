@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en"
+style="height: 600px;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .header{    /*头部*/
+            height: 76px;
+            width: 100%;
+            background:white;
+            position: sticky;
+        }
+        .header_msg{
+                height: 76px;
+                margin: 0 auto;
+                display: flex;   /* 指布局排列方式 控制排列方向与排列顺序 */
+                flex-direction:row;/*水平方向*/
+                justify-content:center;/*主轴上的对齐方式*/
+                align-items:center;
+        }
+        .header_msg div:hover{
+                font-weight: 800; /* 显示的字体加粗 */
+                cursor: pointer;
+        }
+        .dropdown{
+                position: relative;
+                display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            padding: 20px 40px;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+
+        .wirte{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 54px;
+            color: #fff;
+            font-weight: 500;
+            align-items: center;
+            letter-spacing: 15px;
+            transform: translate(0px, -365px);
+        }
+
+
+
+        .banner{
+            background:#01108d;
+            width: 1260px;
+            height: 50px;
+            transform: translate(0px, -154px)
+        }
+        .banner .left{
+            width: 630px;
+            height: 50px;
+            background:white;
+            border-top-right-radius:50px ;
+        }
+        .banner .right{
+            width: 630px;
+            height: 50px;
+            background:white;
+            border-top-left-radius:50px ;
+            float:right;
+            transform: translate(0px, -50px);
+        }
+
+
+
+        .info{
+        max-width: 840px;
+        font-size: 18px;
+        color: #333;
+        line-height: 27px;
+        padding: 50px 0px 90px;
+        margin-left: 200px;
+        transform: translate(10px, -170px);
+    }
+
+
+
+
+    .titlename{
+                width: 1260px;
+                font-size: 42px;
+                font-weight: 500;
+                color: #01103e;
+                text-align: center;
+                margin-bottom: 40px;
+        }
+        .con .con1{
+            font-size: 32px;
+            font-weight: 500;
+            width: 435px;
+        }
+        .con .con2{
+            font-size: 16px;
+            font-weight: 500;
+            width: 435px;
+        }
+        .con .con3{
+            font-size: 16px;
+            margin-top: 6px;
+            width: 340px;
+        }
+        .con .button{
+            width: 94px;
+            height: 32px;
+            background: #046efb;
+            border-radius: 39px;
+            color: white;
+            cursor: pointer;
+            border:none;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .con{
+            display: inline-block;
+            padding: 30px;
+            width: 435px;
+            height: 200px;
+            margin-right: 12px;
+            margin-bottom: 12px;
+        }
+        .con p{
+            padding: auto;
+        }
+        .product{
+            margin: 0 auto;
+            width: 1255px;
+            height: 1062px;
+            box-sizing: border-box;
+            float: left;
+            transform: translate(0px, -205px);
+            background: #f7fbff;
+        }
+        .new{
+            height: 816px;
+            width: 1260px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+
+
+        .service{
+            width: 1200px;
+            background:#f7fbff;
+            padding: 30px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            transform: translate(10px, -336px);
+        }
+        .logo{
+            background:#eef5ff;
+            width: 241px;
+            height: 224px;
+            padding: 0 27px;
+            color: #333;
+            font-size: 16px;
+            justify-content: space-around;
+            margin: 0px 5px;
+            text-align: center;
+        }
+
+
+        .name{
+            margin-bottom: 48px;
+            text-align: center;
+            font-size: 42px;
+            color: #000a1f;
+            font-weight: 500;
+            }
+        .bank-list{
+            width: 1002px;
+            margin:0 auto;
+            margin-bottom: 12px;
+        }
+        .bank-list img{
+            width: 190px;
+            height: 84px;
+        
+        }
+
+        .footer{
+            width:1200px ;
+            height: 530px;
+            background: #1f222c
+        }
+        .footer1{
+            width: 1002px;
+            margin: 0 auto;
+            font-size: 16px;
+            padding: 90px 0;
+            color: #fff;
+        }
+        .footer .title{
+            font-size: 36px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .footer .phone{
+            font-size: 42px;
+            font-weight: 500;
+        }
+        .footer .time{
+            font-size: 16px;
+            opacity: .6; /*指设置盒子模型的透明度*/
+            font-weight: 300;
+        }
+        .footer .work{
+            margin-top: 10px;
+        }
+        .footer .licenle{
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .footer .licenle span{
+            padding-right: 5px;
+        }
+        .right-box{
+            cursor: pointer;
+            float: right;
+            transform: translate(10px, -355px);
+            font-size: 12px;
+        }
+        
+   
+    </style>
+</head>
+<body
+style="background: white;">
+    <div class="header" style="position: sticky;">
+        <div class="header_msg">
+            <div class="header_img">
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/logo.8e6b0dc.png" alt="" 
+                style="width: 140px;height: 49px; float: left; padding-right: 200px;">
+            </div>
+            <div style="padding-right:30px ;">首页</div>
+            <div style="padding-right:30px ;">产业金融服务</div>
+            <div class="dropdown" style="padding-right:30px ;">金融科技服务</div>
+            <div style="padding-right:30px ;">小微金融服务</div>
+            <div class="dropdown" style="padding-right:30px ;">
+                个人金融服务
+
+                <div class="dropdown-content">
+                    <ul type="none">
+                        <li style="padding-bottom: 10px;">财富</li>
+                        <li style="padding-bottom: 10px;">保险</li>
+                        <li style="padding-bottom: 10px;">钱包</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="padding-right:30px ;">关于我们</div>
+        </div>
+
+
+    <div class="body">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/top-banner.3daf51a.png"
+         alt="" style="width: 1260px ; height: 484px;">
+         <div class="wirte">
+            <p>数字科技服务实体经济</p>
+            <p>开放连接践行普惠金融</p>
+         </div>
+    </div>
+
+
+    <div class="banner">
+        <div class="left"></div>
+        <div class="right"></div>
+        </div>
+
+
+    <div class="info">
+        天星数科（原小米数科）是小米集团旗下数字科技服务平台。随着5G+万物互联时代来临， 天星数科将依托小米集团“手机×AIoT”战略， 秉承小米集团技术立业的传统，保持行稳致远的节奏，发挥深耕产业的优势， 通过开放连接的平台模式，运用数字科技手段， 不断自我提升，服务好实体企业的产业金融需求、服务好金融机构的转型升级需求、服务好广大消费者的个人金融需求。
+    </div>
+
+
+    <div class="product">
+        <div class="titlename">产品及服务</div>
+        <div class="new">
+            <div class="con" style="background: url(https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/box-chain.1264a7c.png); background-size: cover;">
+                <p class="con1">产业金融</p>
+                <p class="con2">数字驱动产业升级</p>
+                <p class="con3">运用大数据、AI、区块链等科技，为核心企业和行业B2B平台定制全链条、一站式金融解决方案</p>
+                <button class="button">查看详情</button>
+            </div>
+            <div class="con" style="background: url(https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/box-fintech.a950588.png); background-size: cover;">
+                <p class="con1">金融科技</p>
+                <p class="con2">科技重构价值</p>
+                <p class="con3">科技携手金融，打造产业金融数字化平台</p>
+                <button class="button">查看详情</button>
+            </div>
+            <div class="con" style="background: url(https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/box-micro-finance.3e206d7.png );  background-size: cover;     ">
+                <p class="con1">小微金融</p>
+                <p class="con2">顺业贷，万业兴</p>
+                <p class="con3">为小微企业主提供的专属贷款服务，创业助力，纯线上认证，无抵押，放款快 </p>
+                <button class="button">查看详情</button>
+            </div>
+            <div class="con" style="background:url(https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/box-finance.332c2ae.png);background-size: cover;">
+                <p class="con1">财富</p>
+                <p class="con2">星理财，心服务</p>
+                <p class="con3">综合性理财服务平台，为用户提供安全、专业、便捷的投资理财服务</p>
+                <button class="button">查看详情</button>
+            </div>
+            <div class="con" style="background: url(https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/box-insurance.9bfeded.png); background-size: cover;">
+                <p class="con1">保险</p>
+                <p class="con2">好保险，更划算</p>
+                <p class="con3">创新型互联网保险服务，专业、全面、性价比高</p>
+                <button class="button">查看详情</button>
+            </div>
+            <div class="con" style="background: url(https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/box-wallet.322e8da.png); background-size: cover;">
+                <p class="con1">钱包</p>
+                <p class="con2">优惠支付，智享生活</p>
+                <p class="con3">为用户提供便捷的交易及多样化的生活服务</p>
+                <button class="button">查看详情</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="service">
+        <div class="logo">
+            <img src="	https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/1.cd34bcf.png" alt="">
+            <p>行稳致远</p>
+            <p>立足长远、敬畏风险</p>
+        </div>
+        <div class="logo">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/2.b5c137f.png" alt="">
+            <p>开放连接</p>
+            <p>践行普惠、服务实体</p>
+        </div>
+        <div class="logo">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/3.f478f0c.png" alt="">
+            <p>技术立业</p>
+            <p>科技为先、安全高效</p>
+        </div>
+        <div class="logo">
+            <img src="	https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/4.b85b0d4.png" alt=""> 
+            <p>服务为重</p>
+            <p>用户第一、优化体验</p>
+        </div>
+</div>
+
+
+<div class="bank" style="    transform: translate(10px, -258px);">
+    <div class="name">合作伙伴</div>
+    <div class="bank-list">
+        <img src="	https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/bank1.a87d4d7.png">
+        <img src="	https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/bank2.1e7d5f0.png">
+        <img src="	https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/bank3.bf3f175.png">
+        <img src="	https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/bank4.c30141c.png">
+        <img src="	https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/bank5.2078417.png">
+        <img src="	https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/bank5.2078417.png">
+        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/bank7.36291d2.png">
+        <img src="	https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/bank8.1c7821b.png">
+        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/bank9.253aab9.png">
+        <img src="	https://cdn.cnbj1.fds.api.mi-img.com/mifi-web/img/bank10.2e45cd8.png">
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="footer1">
+        <p class="title"><u>联系我们</u></p>
+        <p class="phone">400-100-3399</p>
+        <p class="time">周一至周日 9:00-19:00</p>
+        <p style="white-space: pre-wrap;">
+监管电话：023-67572095（重庆市地方金融监督管理局 ）
+          023-65869288（重庆市两江新区现代服务业局 ）</p>
+        <p>消保委员会邮箱：mifi-cpcommittee@xiaomi.com </p>
+        <p class="work">商务合作：finance-service@xiaomi.com</p>
+        <p>联系地址：北京市海淀区毛纺路58号院小米总参</p>
+
+        <div class="licenle">
+            <span style="border-right: white 2px solid;">营业执照</span>
+            <span style="border-right: white 2px solid;">管理团队</span>
+            <span>股东全称及股权比例</span>
+        </div>
+        <p style="opacity: .4; font-size: 14px;">Copyright © airstar.com 京ICP备19057461号丨小米小米电子软件技术有限公司丨京公网安备11030102010662号 | 京ICP证B2-20201572号  小米商城 MIUI 有品 IoT 天星银行
+            </p>
+    
+    <div class="right-box">
+        <span style="border-right: 1px solid white;">小米商城</span>
+        <span style="border-right: 1px solid white;">MIUI </span>
+        <span style="border-right: 1px solid white;">有品 </span> 
+        <span style="border-right: 1px solid white;">IoT</span>
+        <span>天星银行</span> 
+    </div>
+</div>
+</div>
+</body>
+</html>
